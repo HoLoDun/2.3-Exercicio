@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:_2._3_Exercicio"
+             x:Class="_2._3_Exercicio.MainPage">
+    
+
+    <StackLayout>
+        <Picker x:Name ="Picker1" Title ="Professor">
+            <Picker.Items></Picker.Items>            
+        </Picker>
+
+        <Picker x:Name ="Picker2" Title ="Diciplina">
+            <Picker.Items></Picker.Items>
+        </Picker>
+
+        <Entry x:Name ="Entry1" Placeholder ="Matricula"
+               HorizontalOptions="Center"/>        
+
+        <Entry x:Name ="Entry2" Placeholder ="Nota"
+               HorizontalOptions="Center"/>
+
+        <Label x:Name ="Label1" IsVisible ="False"
+               Text ="Não foi Possivel Realizar a Checkagem" TextColor ="Red"
+               HorizontalOptions="Center"/>
+
+        <Label x:Name ="Label2" IsVisible ="False"
+               Text ="Aprovado" TextColor ="LightGreen"
+               HorizontalOptions="Center"/>
+        
+        <Label x:Name ="Label3" IsVisible ="False"
+               Text ="Reprovado" TextColor ="Red"
+               HorizontalOptions="Center"/>
+
+        <Button x:Name ="Button" Text ="Verificar"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="Center"
+                Clicked="ButtonClicked"/>
+    </StackLayout>
+</ContentPage>
